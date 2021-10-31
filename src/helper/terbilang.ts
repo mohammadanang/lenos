@@ -44,7 +44,7 @@ function penyebut(nilai: any): string {
   return temp;
 }
 
-function terbilang(nilai: number): string {
+module.exports = function terbilang(nilai: number): string {
   let hasil = '';
   if (nilai < 0) {
     hasil = 'minus ' + penyebut(nilai.toString().trim());
